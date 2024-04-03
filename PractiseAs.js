@@ -44,12 +44,27 @@
 
 // #3 Write a fetch request but explicity state the type of request that you are making 
 
-fetch("https://dog.ceo/api/breeds/image/random", {method: "GET"})
+// fetch("https://dog.ceo/api/breeds/image/random", {method: "GET"})
 
 // NOTE: the second paramter here is an object where you can specify the type of 
 // request being made by stating the value fo the "method" ket 
 
 //#########################################################################
+
+// #4 Make a fetch request but limit the number of object you retrieve to 5
+
+// fetch("https://apis.scrimba.com/jsonplaceholder/posts")
+//     .then(res => res.json())
+//     .then(data => {
+//         const postsArr = data.slice(0, 5)
+//         console.log(postsArr)
+//     })
+
+//NOTE: The .slice method take two arguments: the starting index (inclusive), 
+// and the ending index (*NOT* inclusive!)
+
+//#########################################################################
+
 
 // !VOCAB! 
 
