@@ -25,17 +25,21 @@
 // HTML document has a div with the ID "img-div", and that the fetch request 
 // will return and object with the image URL stored in a property called 'message'
 
-fetch("https://dog.ceo/api/breeds/image/random")
-    .then(response => response.json())
-    .then(data => {
-        console.log(data)
-        document.getElementById("img-div").innerHTML = `
-            <img src="${data.message}" />
-        `
-    })
+// fetch("https://dog.ceo/api/breeds/image/random")
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log(data)
+//         document.getElementById("img-div").innerHTML = `
+//             <img src="${data.message}" />
+//         `
+//     })
 
 // NOTE: Rememeber that bc the second .then block returns multiple lines of 
 // code, wou will need to open curly brackets and put the contents inside, unlike 
 // the first .then wich only spans one line and accordingly does not require curly brackets.
+
+//#########################################################################
+
+// #3
 
 //#########################################################################
