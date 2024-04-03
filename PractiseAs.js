@@ -65,6 +65,25 @@
 
 //#########################################################################
 
+// #5 Building off of the previous question, render the  titles of 
+// the first five items retrieved from the fetch request. Assume you want 
+// to render to a div with the id of "blog-list"
+
+// fetch("https://apis.scrimba.com/jsonplaceholder/posts")
+//     .then(res => res.json())
+//     .then(data => {
+//         const postsArr = data.slice(0, 5)
+//         let html = ""
+//         for (let post of postsArr) {
+//             html += `
+//                 <h3>${post.title}</h3>
+//             `
+//         }
+//         document.getElementById("blog-list").innerHTML = html
+//     })
+
+//#########################################################################
+
 
 // !VOCAB! 
 

@@ -19,5 +19,11 @@
 
 //#########################################################################
 
+// #5 Building off of the previous question, render the  titles of 
+// the first five items retrieved from the fetch request. Assume you want 
+// to render to a div with the id of "blog-list"
+
+//#########################################################################
+
 
 
