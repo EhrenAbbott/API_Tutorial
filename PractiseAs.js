@@ -136,6 +136,39 @@
 
 //#########################################################################
 
+// #8 Building off of the previosu question, add some code
+// to the PUT request that would update the DOM to display the new data. 
+// Assume the id of the the div we want to render to is "blog-list"
+
+// fetch("https://apis.scrimba.com/jsonplaceholder/todos", {
+//     method: "POST",
+//     body: JSON.stringify({
+//         title: "Buy Milk",
+//         completed: false
+//     }),
+//     headers: {
+//         "Content-Type": "application/json"
+//     }
+// })
+//     .then(res => res.json())
+//     .then(post => { 
+//         document.getElementById("blog-list").innerHTML = `
+//                 <h3 class="blah">${post.title}</h3>
+//                 <p>${post.body}</p>
+//                 <hr />
+//                 ${document.getElementById("blog-list").innerHTML}
+//             `
+//     })
+
+    // NOTE: In the second .then block, you coudl do += after innerHTML, 
+    // but this woudl add the new post to the bottom of the page; the above 
+    // way of writing it just ensures that the new information is displayed
+    // above the posts that are already being displayed.  
+
+//#########################################################################
+
+
+
 // !VOCAB! 
 
 // HTTP: 

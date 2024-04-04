@@ -31,5 +31,11 @@
 
 //#########################################################################
 
+// #8 Building off of the previosu question, add some code
+// to the PUT request that would update the DOM to display the new data. 
+// Assume the id of the the div we want to render to is "blog-list"
+
+//#########################################################################
+
 
 
