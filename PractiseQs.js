@@ -25,5 +25,11 @@
 
 //#########################################################################
 
+// #6 Create a post request  to https://apis.scrimba.com/jsonplaceholder/todos. 
+//  In the options objects (the second fetch argument), add a body property containing
+// two pieces of data. 
+
+//#########################################################################
+
 
 

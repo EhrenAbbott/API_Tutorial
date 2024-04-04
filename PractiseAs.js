@@ -84,6 +84,30 @@
 
 //#########################################################################
 
+// #6 Create a post request  to https://apis.scrimba.com/jsonplaceholder/todos. 
+//  In the options objects (the second fetch argument), add a body property containing
+// two pieces of data. 
+
+// fetch("https://apis.scrimba.com/jsonplaceholder/todos", {
+//     method: "POST",
+//     body: JSON.stringify({
+//         title: "Buy Milk",
+//         completed: false
+//     })
+// })
+//     .then(res => res.json())
+//     .then(data => console.log(data))
+
+// NOTE: Notice that what we have are two properties stores in a object as the value of
+// "body". "Body" is already a property inside the options object, which is itself the second 
+// argument of the fetch method. 
+// -The data that we are sending in the body object is whatever we want it to be 
+// -Notice that the contents of the body property need to be converted into JSON bc it gets sent; 
+// some libraries do this automaically, but fetch does not, so you just need to wrap the whole object in 
+// JSON.stringify()
+
+//#########################################################################
+
 
 // !VOCAB! 
 
@@ -95,7 +119,7 @@
     // Has multiple components: 
     // 1. Path(URL) - this is like a location/address of the server you are sending the request to 
     // 2. Method - include things like GET, POST, PUT, DELETE, the method refers to what specific action you are trying to take
-    // 3. Body - this is optional, as some requests require this and some don't
+    // 3. Body - this is optional, as some requests require this and some don't. It is the data that we want to send to the server.
     // 4. Headers - metainformation about the request, like an authentication token or info about the browser or operating system
 
 // Path (URL): 
@@ -113,3 +137,7 @@
     // POST - adding new data 
     // PUT - updating existing data
     // DELETE - remove data
+
+// Request body: 
+    // Data that gets sent to the server; only included with a POST or PUT request 
+    // - Needs to be turned into JSON first. 
