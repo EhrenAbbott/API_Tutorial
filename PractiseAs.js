@@ -105,9 +105,36 @@
 // -Notice that the contents of the body property need to be converted into JSON bc it gets sent; 
 // some libraries do this automaically, but fetch does not, so you just need to wrap the whole object in 
 // JSON.stringify()
+// -If you console log it as is, it will just give you an object with an id number. 
+// This is because we have not set the headers to provide it with the appropriate metadata. 
 
 //#########################################################################
 
+// #7 Building off of the previous question, and a headers object
+// that tells the server what type of data we are sending.
+
+// fetch("https://apis.scrimba.com/jsonplaceholder/todos", {
+//     method: "POST",
+//     body: JSON.stringify({
+//         title: "Buy Milk",
+//         completed: false
+//     }),
+//     headers: {
+//         "Content-Type": "application/json"
+//     }
+// })
+//     .then(res => res.json())
+//     .then(data => console.log(data))
+
+// NOTE: The Content-Type property in headers is critical bc it
+// tells the server what type of data we are sending; without this, 
+// the server won't really know how to handle the request body. 
+// -Notice that the property in the headers object is "Content-Type" in quotes, 
+// with both words written with the first letter capitalized (unclear as to if this
+// is syntactically necessary or just strong convention, so it is best to stick to it 
+// anyway)
+
+//#########################################################################
 
 // !VOCAB! 
 
@@ -140,4 +167,8 @@
 
 // Request body: 
     // Data that gets sent to the server; only included with a POST or PUT request 
-    // - Needs to be turned into JSON first. 
+    // Needs to be turned into JSON first. 
+
+// Request headers: 
+    // Meta data about the outgoing request 
+    // Can be things like authentificaiton info, body info, client data, etc.
