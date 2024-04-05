@@ -167,6 +167,24 @@
 
 //#########################################################################
 
+// #9 Looking at a and b, what is the difference in how the code run for each example?
+
+// a) 
+// myButton.addEventListener("click", handleClick())
+
+// b) 
+// myButton.addEventListener("click", handleClick)
+
+// When the parentheses are incldued, as in example a, 
+// the function will be run *RIGHT NOW*, so if this function is the argument 
+// of an event listener, the function will not wait for the button to be clicked
+// in order to run, it will run as soon as the page loads. In b, 
+// the contents of the function are passed in just by using the function name
+// without the parentheses; using it this way, as a callback function, allows it 
+// to be called  later, when appropriate, in this case after a click.
+
+
+//#########################################################################
 
 
 // !VOCAB! 

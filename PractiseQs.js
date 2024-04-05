@@ -37,5 +37,15 @@
 
 //#########################################################################
 
+// #9 Looking at a and b, what is the difference in how the code run for each example?
+
+// a) 
+// myButton.addEventListener("click", handleClick())
+
+// b) 
+// myButton.addEventListener("click", handleClick)
+
+//#########################################################################
+
 
 
