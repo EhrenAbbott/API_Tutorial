@@ -171,6 +171,50 @@
 
 // !VOCAB! 
 
+// query strings (AKA query parameters): 
+    // allows us to filter the results that we are retrieving when using URL to make 
+    // fetch requests. Query string always start with a question mark.
+    // EX: /bikes?types=mountain   returns all of the bikes that have a type property of mountain. 
+    // The part that comes after the ? is the query string 
+    // more queries can be added with a &:    /bikes?type=road&brand=trek  returns all of the bikes
+    // that are roadbikes made by trek.
+    // Different APIs can have slight variable in the implementation of their query strings.
+
+// URL Parameter: 
+    // a variables inside the URL that acts as a placeholder for the real value
+
+// REST: 
+    // REpresentational State Transfer
+    //
+    // This is a standardized protocol for clients 
+    // and servers to communicate with one another
+    //  
+    // Principles of REST:
+    //
+    // client and server separation- a client requests JSON data from the server and the 
+    // server responds with JSON data; the server isn't really concerned with how the JSON
+    // data gets used; this way, the client isn't relying on the server to render the HTML page with the 
+    // data and send it back in one big bundle. Almost all
+    // 
+    // statelessness- whent he client makes a request to the server, the server doesn't retain 
+    // any memory of that request of the client. If the client needs more information, it will
+    // need to send the request again. This concept is also called 'session state' 
+    // 
+    // accessing/interacting with resources-  
+    // establishes a stadardizes way of setting up URL endpoints
+    // EX:   /bikes   is a noun, so a GET request would return an array of bikes; a collection of that noun
+    // A POST request would add a new bike to the bikes collection
+    //  EX: /bikes/:id  (AKA /bikes/123) paired with a GET request would return an object on one specific bike
+    // A PUT or DELETE could also be used with this
+    // Good API design will not include things like verbs in the endpoints, as the action you are taking is indicated
+    // in the request method. 
+    //
+    // nested resources- 
+    // after specifying the id number of (using the example above) bikes, you can continue to 
+    // specify certain properties that you need, so you could say /bikes/123/reviews to get 
+    // all of the reviews of a bike with a specific id
+
+
 // HTTP: 
     // Stands for Hypertect Trasnfer Protocol, which essentially just refers to 
     // the method of moving/sending text via the internet
