@@ -189,6 +189,20 @@
 
 // !VOCAB! 
 
+// promise: 
+    // an object that represents the eventual completion or failure 
+    // or an asynchronous operation. It is a proxy for a value that is not 
+    // necessarily known when the promise is created. 
+    // A promise is in one of these states: 
+    // pending-- the initial state, it is neither fulfilled nor rejected
+    // fulfilled-- the operation was completed successfully
+    // rejected-- the operation failed
+    // A promise is 'settled' if it is fulfilled or rejected (just not pending)
+    // .then is a method specifically for promises, which happens to also return a promise. 
+    // Bc of this, the usage of .then constitutes promise chaining.
+    // When you are chaining .then blocks, whateevr is returns from the first .then block 
+    // will be passed in as the argument of the callback function for the second .then.
+
 // query strings (AKA query parameters): 
     // allows us to filter the results that we are retrieving when using URL to make 
     // fetch requests. Query string always start with a question mark.
