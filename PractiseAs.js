@@ -186,6 +186,11 @@
 
 //#########################################################################
 
+// #10 Looking at the documentation for the following API, what endpoint would
+// you use to draw two new cards?
+
+//#########################################################################
+
 
 // !VOCAB! 
 
