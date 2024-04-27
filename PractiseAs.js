@@ -187,7 +187,14 @@
 //#########################################################################
 
 // #10 Looking at the documentation for the following API, what endpoint would
-// you use to draw two new cards?
+// you use to draw three new cards?
+
+// https://deckofcardsapi.com/
+
+//The endpoint would be: https://deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=3
+// We know this from going to the documentation and looking under the "draw a card" section, where
+// the number of cards is established with the /?count=2 parameter and and the deck_id is
+// retrieved through using the endpoint outlined in the first section "shuffle the cards"
 
 //#########################################################################
 
