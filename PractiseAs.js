@@ -229,10 +229,20 @@
 // - Before, with .then, we could not have saved the result fo the fetch request to a variable, 
 // but not with await we can assign the response to a variable. This also means we no longer 
 // need to indentations to denotes the nesting of code, so we have essentially written
-// an async function so it looks/reads like a synchronous function.
+// an async function so it looks/reads like a synchronous function 
 
 //#########################################################################
 
+// #12 Retrieve an image from the following API and set it as the background image
+// for the body of the html document: https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature
+
+// fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature")
+//     .then(res => res.json())
+//     .then(data => {
+//         document.body.style.backgroundImage = `url(${data.urls.full})`
+//     })
+
+//#########################################################################
 
 // !VOCAB! 
 

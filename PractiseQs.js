@@ -68,5 +68,10 @@
 
 //#########################################################################
 
+// #12 Retrieve an image from the following API and set it as the background image
+// for the body of the html document: https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature
+
+//#########################################################################
+
 
 
