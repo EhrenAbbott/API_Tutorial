@@ -198,6 +198,41 @@
 
 //#########################################################################
 
+// #11 Make the fetch request in the following function asynchronous and refactor 
+// it so that it avoids using .then 
+
+//BEFORE:
+// function handleClick() {
+//     fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
+//         .then(res => res.json())
+//         .then(data => {
+//             remainingText.textContent = `Remaining cards: ${data.remaining}`
+//             deckId = data.deck_id
+//             console.log(deckId)
+//         })
+// }
+
+//AFTER: 
+// async function handleClick() {
+//     const response = await fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
+//     const data = await res.json()
+//     remainingText.textContent = `Remaining cards: ${data.remaining}`
+//     deckId = data.deck_id
+//     console.log(deckId)
+// }
+
+
+//NOTE: The async keyword goes before a before. The await keyword is *ENABLED* by the
+// async keyword, and await goes before a method/function that returns a promise. 
+// - If you try to use await without first using async in the above function, you will get 
+// an error message.
+// - Before, with .then, we could not have saved the result fo the fetch request to a variable, 
+// but not with await we can assign the response to a variable. This also means we no longer 
+// need to indentations to denotes the nesting of code, so we have essentially written
+// an async function so it looks/reads like a synchronous function.
+
+//#########################################################################
+
 
 // !VOCAB! 
 

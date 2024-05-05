@@ -54,5 +54,19 @@
 
 //#########################################################################
 
+// #11 Make the fetch request in the following function asynchronous and refactor 
+// it so that it avoids using .then 
+
+// function handleClick() {
+//     fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
+//         .then(res => res.json())
+//         .then(data => {
+//             remainingText.textContent = `Remaining cards: ${data.remaining}`
+//             deckId = data.deck_id
+//         })
+// }
+
+//#########################################################################
+
 
 
